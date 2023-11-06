@@ -1,7 +1,7 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import React from 'react';
-import '../Product.css';
+import '../product.css';
 
 const DragProduct = ({ product }) => {
   const { attributes, listeners, setNodeRef, transform, transition } =
