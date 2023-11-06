@@ -9,7 +9,7 @@ import { BiImage } from 'react-icons/bi';
 import 'react-responsive-modal/styles.css';
 import DragProduct from './Component/DragProduct';
 import { data } from './data';
-import './Product.css';
+import './product.css';
 const Product = () => {
   const [selectedItems, setSelectedItems] = useState([]);
   const [products, setProducts] = useState(data);
