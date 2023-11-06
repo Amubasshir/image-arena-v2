@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.imageContainer {
+  position: relative;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.checkbox {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.checkbox1 {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageContainer:hover .checkbox {
+  opacity: 1;
+}
+
+.hover\:overlay-bg {
+  position: relative; /* Ensure it's a positioned element for absolute children */
+}
+
+.hover\:overlay-bg::before {
+  content: ''; /* Create an invisible pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background-color 0.3s; /* Add a transition for smooth hover effect */
+  pointer-events: none; /* Allow interactions to pass through the overlay */
+}
+
+.hover\:overlay-bg:hover::before {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Black overlay with 50% opacity on hover */
+}
