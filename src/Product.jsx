@@ -7,7 +7,7 @@ import {
 import { useState } from 'react';
 import { BiImage } from 'react-icons/bi';
 import 'react-responsive-modal/styles.css';
-import DrugProduct from './Component/DrugProduct';
+import DragProduct from './Component/DragProduct';
 import { data } from './data';
 import './Product.css';
 const Product = () => {
@@ -120,7 +120,7 @@ const Product = () => {
                       i === 0 ? 'md:col-span-2 md:row-span-2' : ''
                     }`}
                   >
-                    <DrugProduct product={product} />
+                    <DragProduct product={product} />
                     <>
                       {selectedItems.some((field) => field == product.id) ? (
                         <div className="checkbox1 ">

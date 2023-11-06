@@ -3,7 +3,7 @@ import { CSS } from '@dnd-kit/utilities';
 import React from 'react';
 import '../Product.css';
 
-const DrugProduct = ({ product }) => {
+const DragProduct = ({ product }) => {
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({
       id: product.id,
@@ -27,4 +27,4 @@ const DrugProduct = ({ product }) => {
   );
 };
 
-export default DrugProduct;
+export default DragProduct;
